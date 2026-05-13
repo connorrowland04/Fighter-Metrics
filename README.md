@@ -141,9 +141,9 @@ Deletes a saved fighter from the Supabase database by ESPN athlete ID.
 
 ### Known Bugs & Limitations
 
-- **Fighter search requires ESPN athlete ID** — there is no name-based search currently because ESPN's athlete search endpoint is inconsistent for MMA. A future improvement would be to build a lookup table of known fighter IDs.
-- **Win method chart on home page** — when no live fight results are available from the scoreboard, the chart falls back to historical average data. Future work should pull result history from a dedicated stats source.
-- **No user authentication** — saved fighters are shared across all users of the same deployment. Future work should add Supabase Auth to give each user their own dashboard.
+- **Fighter search requires ESPN athlete ID**  there is no name-based search currently because ESPN's athlete search endpoint is inconsistent for MMA. A future improvement would be to build a lookup table of known fighter IDs.
+- **Win method chart on home page**  when no live fight results are available from the scoreboard, the chart falls back to historical average data. Future work should pull result history from a dedicated stats source.
+- **No user authentication** saved fighters are shared across all users of the same deployment. Future work should add Supabase Auth to give each user their own dashboard.
 
 ---
 
