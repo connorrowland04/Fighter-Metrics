@@ -1,5 +1,4 @@
--- Fighter Metrics — Supabase Database Setup
--- Run this SQL in your Supabase SQL Editor before starting the app
+
 
 CREATE TABLE fighters (
   id         SERIAL PRIMARY KEY,
@@ -11,5 +10,3 @@ CREATE TABLE fighters (
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Optional: enable Row Level Security (recommended for production)
--- ALTER TABLE fighters ENABLE ROW LEVEL SECURITY;
