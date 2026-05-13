@@ -109,7 +109,7 @@ function drawStatsChart(wins, losses, draws) {
   });
 }
 
-// ── Save Fighter to Supabase ───────────────────────────────
+
 async function saveFighter() {
   if (!currentFighter) return;
 
@@ -135,7 +135,7 @@ async function saveFighter() {
   }
 }
 
-// ── Load Current Card Fighters from ESPN ──────────────────
+
 async function loadCardFighters() {
   const container = document.getElementById('card-fighters');
   try {
