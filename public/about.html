@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Fighter Metrics</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🥊 Fighter Metrics</div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/fighters">Fighters</a>
+      <a href="/about" class="active">About</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">About Fighter Metrics</h1>
+
+    <section class="section about-section">
+      <div class="about-card">
+        <h2>The Problem</h2>
+        <p>When I was 11 years old, I watched UFC 194 with my dad — Conor McGregor knocked out Jose Aldo in 13 seconds. Since then I've been hooked on the sport. But as a fan, I've always found it frustrating that tracking fighter stats, championship history, win methods, and divisional trends means bouncing between half a dozen different websites. Fighter Metrics solves that by pulling it all into one place.</p>
+      </div>
+
+      <div class="about-card">
+        <h2>What It Does</h2>
+        <ul class="about-list">
+          <li>🗓️ View upcoming UFC events and current fight cards live from ESPN</li>
+          <li>🔍 Look up any UFC fighter by their ESPN athlete ID</li>
+          <li>⭐ Save fighters to your personal dashboard via Supabase</li>
+          <li>📊 Visualize win method breakdowns with Chart.js</li>
+          <li>🥊 Browse fighters on the current card</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>Data Sources</h2>
+        <ul class="about-list">
+          <li><strong>ESPN Unofficial UFC API</strong> — Live event data, fighter profiles, fight cards. No auth required.</li>
+          <li><strong>Supabase</strong> — PostgreSQL database storing your saved fighters.</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>Tech Stack</h2>
+        <ul class="about-list">
+          <li><strong>Frontend:</strong> HTML, CSS, Vanilla JS, Chart.js, CountUp.js</li>
+          <li><strong>Backend:</strong> Node.js + Express</li>
+          <li><strong>Database:</strong> Supabase (PostgreSQL)</li>
+          <li><strong>Deployment:</strong> Vercel</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>Who Is This For?</h2>
+        <p>UFC fans who want stats without the hassle. Sports journalists looking for quick reference data. Analysts who want to spot trends in fight methods and divisional performance. And anyone who, like me, got hooked watching two fighters leave everything in the octagon.</p>
+      </div>
+    </section>
+
+    <!-- Animated stats -->
+    <section class="section">
+      <h2>By The Numbers</h2>
+      <div class="stats-row" id="stats-row">
+        <div class="stat-block">
+          <span class="stat-num" id="stat-events">0</span>
+          <span class="stat-label">UFC Events Tracked</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="stat-fighters">0</span>
+          <span class="stat-label">Active Fighters</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="stat-saved">0</span>
+          <span class="stat-label">Fighters You've Saved</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Fighter Metrics &copy; 2026 — Connor Rowland | INST 377 Dynamic Web Applications</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
+  <script src="/js/about.js"></script>
+</body>
+</html>
