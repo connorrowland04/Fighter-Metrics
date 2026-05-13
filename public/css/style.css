@@ -1,4 +1,4 @@
-/* ── Reset & Base ─────────────────────────────────────────── */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -24,7 +24,7 @@ body {
   flex-direction: column;
 }
 
-/* ── Navbar ───────────────────────────────────────────────── */
+
 .navbar {
   background: var(--dark);
   border-bottom: 2px solid var(--red);
@@ -62,7 +62,7 @@ body {
   padding-bottom: 2px;
 }
 
-/* ── Hero ─────────────────────────────────────────────────── */
+
 .hero {
   background: linear-gradient(135deg, #0d0d0d 0%, #1a0a0a 50%, #2a0808 100%);
   border-bottom: 1px solid var(--border);
@@ -84,7 +84,7 @@ body {
   margin: 0 auto;
 }
 
-/* ── Layout ───────────────────────────────────────────────── */
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -112,7 +112,7 @@ body {
   color: #fff;
 }
 
-/* ── Cards ────────────────────────────────────────────────── */
+
 .fighters-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -176,7 +176,7 @@ body {
   color: var(--red);
 }
 
-/* ── Events Grid ──────────────────────────────────────────── */
+
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -208,7 +208,7 @@ body {
   color: var(--muted);
 }
 
-/* ── Search ───────────────────────────────────────────────── */
+
 .search-section { }
 
 .search-bar {
@@ -256,7 +256,7 @@ body {
   text-decoration: underline;
 }
 
-/* ── Profile Card ─────────────────────────────────────────── */
+
 .profile-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -301,7 +301,7 @@ body {
   color: #fff;
 }
 
-/* ── Charts ───────────────────────────────────────────────── */
+
 .chart-wrapper {
   background: var(--card);
   border: 1px solid var(--border);
@@ -310,7 +310,7 @@ body {
   max-width: 500px;
 }
 
-/* ── About ────────────────────────────────────────────────── */
+
 .about-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -350,7 +350,7 @@ body {
   line-height: 1.5;
 }
 
-/* ── Stats Row (About page) ───────────────────────────────── */
+
 .stats-row {
   display: flex;
   gap: 2rem;
@@ -383,11 +383,11 @@ body {
   display: block;
 }
 
-/* ── Utility ──────────────────────────────────────────────── */
+
 .loading { color: var(--muted); font-size: 0.9rem; }
 .error { color: var(--red); font-size: 0.9rem; }
 
-/* ── Footer ───────────────────────────────────────────────── */
+
 .footer {
   background: var(--dark);
   border-top: 1px solid var(--border);
@@ -397,7 +397,7 @@ body {
   color: var(--muted);
 }
 
-/* ── Responsive ───────────────────────────────────────────── */
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.6rem; }
   .search-bar { flex-direction: column; }
