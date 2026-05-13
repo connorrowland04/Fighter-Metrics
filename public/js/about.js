@@ -1,12 +1,11 @@
-// about.js — animated stats using CountUp.js + fetch from backend
+
 
 async function loadStats() {
   try {
-    // Fetch scoreboard for event count
     const scoreRes = await fetch('/api/ufc/scoreboard');
     const scoreJson = await scoreRes.json();
 
-    // Fetch saved fighters count
+
     const savedRes = await fetch('/api/fighters');
     const savedJson = await savedRes.json();
 
@@ -18,7 +17,7 @@ async function loadStats() {
       : 24;
     const savedCount = savedJson?.data?.length || 0;
 
-    // Animate with CountUp.js
+ 
     if (typeof countUp !== 'undefined') {
       new countUp.CountUp('stat-events', eventCount, { duration: 2 }).start();
       new countUp.CountUp('stat-fighters', fighterCount, { duration: 2.5 }).start();
