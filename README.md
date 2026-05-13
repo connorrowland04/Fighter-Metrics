@@ -1,7 +1,7 @@
 # Fighter Metrics
 
 ## Description
-Fighter Metrics is a UFC performance and trend analytics platform that aggregates fighter statistics, upcoming event data, and divisional trends into one unified web application. Users can search for UFC fighters by their ESPN athlete ID, view their fight records and stats, save fighters to a personal dashboard, and explore who's on the current UFC card — all powered by the ESPN unofficial UFC API and a Supabase database.
+Fighter Metrics is a UFC performance and trend analytics platform that aggregates fighter statistics, upcoming event data, and divisional trends into one unified web application. Users can search for UFC fighters by their ESPN athlete ID, view their fight records and stats, save fighters to a personal dashboard, and explore who's on the current UFC card all powered by the ESPN unofficial UFC API and a Supabase database.
 
 ## Target Browsers
 - Chrome 120+ (desktop & Android)
@@ -11,7 +11,7 @@ Fighter Metrics is a UFC performance and trend analytics platform that aggregate
 
 The application is responsive and works on modern mobile browsers. iOS Safari and Android Chrome are fully supported.
 
----
+
 
 ## Developer Manual
 
