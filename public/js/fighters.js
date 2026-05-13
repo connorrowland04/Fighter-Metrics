@@ -1,9 +1,9 @@
-// fighters.js — Fetch 1: ESPN athlete, Fetch 2: ESPN scoreboard, Fetch 3: Supabase fighters
+
 
 let currentFighter = null;
 let statsChart = null;
 
-// ── Search by ESPN Athlete ID ──────────────────────────────
+
 async function searchFighter(id) {
   if (!id) return;
   id = id.trim();
@@ -52,7 +52,7 @@ async function searchFighter(id) {
       </div>
     `;
 
-    // Draw stats chart if record available
+ 
     if (d.wins !== undefined) {
       chartWrapper.style.display = 'block';
       drawStatsChart(d.wins || 0, d.losses || 0, d.draws || 0);
@@ -187,7 +187,7 @@ async function loadCardFighters() {
   }
 }
 
-// ── Load Saved Fighters from Supabase ─────────────────────
+
 async function loadSavedFighters() {
   const container = document.getElementById('saved-list');
   try {
@@ -231,7 +231,7 @@ async function deleteFighter(espn_id) {
   }
 }
 
-// ── Event Listeners ───────────────────────────────────────
+
 document.getElementById('search-btn').addEventListener('click', () => {
   searchFighter(document.getElementById('fighter-search').value);
 });
@@ -250,6 +250,6 @@ document.querySelectorAll('.id-hint').forEach(el => {
   });
 });
 
-// Init
+
 loadCardFighters();
 loadSavedFighters();
